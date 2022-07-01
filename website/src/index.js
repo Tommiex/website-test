@@ -5,16 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './compRestaurant/navbar/navbar';
 import Category from './compRestaurant/category/category';
-
+import Review from './compRestaurant/review/maincontain';
+import Maincontain from './compRestaurant/review/maincontain';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <>
-      <Navbar />
-      <Category/>
+      <Navbar/>
+      <div className='main'>
+        <Category/>
+        <Maincontain/>
+      </div>
+      
     </>
-    
   </React.StrictMode>
 );
 

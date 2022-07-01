@@ -1,9 +1,23 @@
-.side-bar{
+.sidebar{
     position: relative;
-    left: 0;
-    top: 0;
     width: 80px;
-    height: 100vh;
-    background: #B7EAD7;
-    z-index: 1;
+    height: 100%;
+    background: #002115;
+    display: flex;
+    justify-content: center;
+}
+.cate-sidebar{
+    position: fixed;
+    top: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.cate{
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
 }
