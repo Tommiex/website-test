@@ -14,4 +14,4 @@ function Navbar1R(){
         </div>
     )
 }
-export default Navbar;
+export default Navbar1R;
