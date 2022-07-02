@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Navbar from './compRestaurant/navbar/navbar';
-import Category from './compRestaurant/category/category';
-import Review from './compRestaurant/review/maincontain';
-import Maincontain from './compRestaurant/review/maincontain';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

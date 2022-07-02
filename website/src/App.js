@@ -1,24 +1,15 @@
-
-
-
-
-
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import SiteR from "./SiteRestaurant";
-
-
+import SiteMain from "./compMainsite/siteMain";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/main" element={<siteMain/>}></Route>
-        <Route path="/rest" element={<SiteR/>}></Route>
-       
+        <Route path="/main" element={<SiteMain />}></Route>
+        <Route path="/rest" element={<SiteR />}></Route>
       </Routes>
-
-      {/* <LoginWithGoogle></LoginWithGoogle> */}
     </BrowserRouter>
   );
 }
