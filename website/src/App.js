@@ -1,18 +1,25 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Navbar1R from "./compRestaurant/navbar/navbar";
-import Category from "./compRestaurant/category/category";
-import Maincontain from "./compRestaurant/review/maincontain";
+
+
+
+
+
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import SiteR from "./SiteRestaurant";
+
+
 
 function App() {
   return (
-    <>
-      <Navbar1R/>
-      <div className="main">
-        <Category />
-        <Maincontain />
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/main" element={<siteMain/>}></Route>
+        <Route path="/rest" element={<SiteR/>}></Route>
+       
+      </Routes>
+
+      {/* <LoginWithGoogle></LoginWithGoogle> */}
+    </BrowserRouter>
   );
 }
 
