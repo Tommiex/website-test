@@ -1,8 +1,8 @@
-
+import NavbarM1 from "./navbar/navbar"
 const SiteMain=() =>{
     return(
         <div>
-            <p>testmain</p>
+            <NavbarM1></NavbarM1>
         </div>
     )
 }
