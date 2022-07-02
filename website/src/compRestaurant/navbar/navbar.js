@@ -4,12 +4,12 @@ function Navbar1R(){
     return(
         <div className="nav">
             <div className="Left">
-                Home
+                All
             </div>
             <div className="Right">
-                <a href="#">home</a>
-                <a href="#">info</a>
-                <a href="#">page</a>
+                <a href="#">Promotion</a>
+                <a href="#">Contact</a>
+                <a href="#">Back to main</a>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
+import { Route , Routes } from "react-router-dom";
 import SiteR from "./SiteRestaurant";
 import SiteMain from "./compMainsite/siteMain";
 
