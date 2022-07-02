@@ -1,5 +1,5 @@
 import "./navbar.css";
-function Navbar(){
+function Navbar1R(){
     
     return(
         <div className="nav">

@@ -1,13 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./compRestaurant/navbar/navbar";
+import Navbar1R from "./compRestaurant/navbar/navbar";
 import Category from "./compRestaurant/category/category";
 import Maincontain from "./compRestaurant/review/maincontain";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar1R/>
       <div className="main">
         <Category />
         <Maincontain />

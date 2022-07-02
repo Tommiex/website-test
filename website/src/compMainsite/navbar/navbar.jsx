@@ -9,3 +9,4 @@ const NavbarM1 = ()=>{
         </div>
     )
 }
+export default NavbarM1
