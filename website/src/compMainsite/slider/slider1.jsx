@@ -1,5 +1,5 @@
-import "./slider.css";
-const Slider = () => {
+import "./slider1.css";
+const SliderSmenu = () => {
   return (
     <div className="slider">
       <section className="carousel" aria-label="Gallery">
@@ -82,4 +82,4 @@ const Slider = () => {
     </div>
   );
 };
-export default Slider;
+export default SliderSmenu;

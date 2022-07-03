@@ -1,6 +1,7 @@
 import NavbarM1 from "./navbar/navbar";
-import Slider from "./slider/slider";
+import SliderSmenu from "./slider/slider1";
 import "./site.css";
+
 
 const SiteMain = () => {
   return (
@@ -11,9 +12,10 @@ const SiteMain = () => {
 
       <div className="grid">
         <div className="grid-slide">
-          <Slider></Slider>
+          <SliderSmenu></SliderSmenu>
         </div>
       </div>
+      
     </>
   );
 };
