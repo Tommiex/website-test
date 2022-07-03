@@ -43,9 +43,10 @@
   }
 }
 .slider {
-  width: 500px;
+  width: 80%;
   z-index: -1;
   position: absolute;
+  max-height: 500px;
 }
 * {
   box-sizing: border-box;
@@ -79,7 +80,7 @@ li {
 
 .carousel {
   position: relative;
-  padding-top: 75%;
+  padding-top: 500px;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
 }
@@ -95,12 +96,13 @@ li {
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+  max-height: 500px;
 }
 
 .carousel__slide {
   position: relative;
   flex: 0 0 100%;
-  width: 100%;
+  
   background-color: #f99;
   counter-increment: item;
 }
@@ -124,7 +126,7 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   scroll-snap-align: center;
 }
 
@@ -162,6 +164,7 @@ li {
 
 .carousel__navigation-list,
 .carousel__navigation-item {
+  
   display: inline-block;
 }
 
@@ -183,7 +186,7 @@ li {
 .carousel__next {
   position: absolute;
   top: 0;
-  margin-top: 37.5%;
+  margin-top: 250px;
   width: 4rem;
   height: 4rem;
   transform: translateY(-50%);
