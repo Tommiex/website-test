@@ -1,14 +1,37 @@
 import NavbarM1 from "./navbar/navbar";
 import Slider from "./slider/slider";
-import SeachBoxM from "./searchBox/searchBox";
+
 const SiteMain = () => {
   return (
     <>
-      <NavbarM1></NavbarM1>
-      <SeachBoxM></SeachBoxM>
-      <div className="grid">
-        <Slider></Slider>
+      <div id="Navbar">
+        <NavbarM1></NavbarM1>
       </div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam esse
+      laborum suscipit accusamus animi, natus laboriosam at, rerum vitae nulla
+      temporibus quis quas quibusdam, aperiam vero officiis obcaecati saepe ex.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam esse
+      laborum suscipit accusamus animi, natus laboriosam at, rerum vitae nulla
+      temporibus quis quas quibusdam, aperiam vero officiis obcaecati saepe ex.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam esse
+      laborum suscipit accusamus animi, natus laboriosam at, rerum vitae nulla
+      temporibus quis quas quibusdam, aperiam vero officiis obcaecati saepe ex.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam esse
+      laborum suscipit accusamus animi, natus laboriosam at, rerum vitae nulla
+      temporibus quis quas quibusdam, aperiam vero officiis obcaecati saepe ex.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam esse
+      laborum suscipit accusamus animi, natus laboriosam at, rerum vitae nulla
+      temporibus quis quas quibusdam, aperiam vero officiis obcaecati saepe ex.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam esse
+      laborum suscipit accusamus animi, natus laboriosam at, rerum vitae nulla
+      temporibus quis quas quibusdam, aperiam vero officiis obcaecati saepe ex.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam esse
+      laborum suscipit accusamus animi, natus laboriosam at, rerum vitae nulla
+      temporibus quis quas quibusdam, aperiam vero officiis obcaecati saepe ex.
+
+      {/* <div className="grid">
+        <Slider></Slider>
+      </div> */}
     </>
   );
 };
