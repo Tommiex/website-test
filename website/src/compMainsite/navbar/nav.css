@@ -13,21 +13,23 @@ strong {
   font-weight: 600;
   letter-spacing: 0.03em;
   color: #212121;
-  position: fixed;
   z-index: 1000;
-  
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 60px;
+  background-color: aquamarine;
 }
 
-header {
+.search-box {
   display: flex;
-
-  width: 100%;
-  height: 70px;
-  background: #212121;
-  color: #fff;
   justify-content: center;
   align-items: center;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.searchB1 {
+  position: fixed;
+  width: 400px;
 }
 
 main {
@@ -59,18 +61,11 @@ main small {
 
 #nav-container {
   position: fixed;
-
+  grid-column-start: 1;
+  grid-column-end: 2;
   height: 100vh;
   width: 100%;
   pointer-events: none;
-}
-
-#nav-container:focus-within .bg {
-  visibility: visible;
-  opacity: 0.6;
-}
-#nav-container * {
-  visibility: visible;
 }
 
 .button {
@@ -118,7 +113,7 @@ main small {
 #nav-content {
   margin-top: 70px;
   padding: 20px;
-  width: 90%;
+
   max-width: 300px;
   position: absolute;
   top: 0;
