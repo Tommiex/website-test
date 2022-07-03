@@ -1,11 +1,15 @@
 import NavbarM1 from "./navbar/navbar";
 import Slider from "./slider/slider";
+import SeachBoxM from "./searchBox/searchBox";
 const SiteMain = () => {
   return (
-    <div className="grid">
+    <>
       <NavbarM1></NavbarM1>
-      <Slider></Slider>
-    </div>
+      <SeachBoxM></SeachBoxM>
+      <div className="grid">
+        <Slider></Slider>
+      </div>
+    </>
   );
 };
 export default SiteMain;
