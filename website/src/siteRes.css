@@ -3,8 +3,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
   
   code {
@@ -17,11 +15,14 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+  .All{
+    height: 300vh;
+  }
   .main{
+    height: inherit;
     display: flex;
     flex-direction: row;
-    flex-wrap: unset;
+    overflow: hidden;
   }
   .cate-index{
     position: relative;

@@ -6,13 +6,13 @@ import Maincontain from "./compRestaurant/review/maincontain";
 
 function SiteR() {
   return (
-    <>
+    <div className="All">
       <Navbar1R/>
       <div className="main">
         <Category />
         <Maincontain />
       </div>
-    </>
+    </div>
   );
 }
 
