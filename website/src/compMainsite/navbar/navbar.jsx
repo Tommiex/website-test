@@ -1,19 +1,16 @@
 import "./nav.css";
 
 const NavbarM1 = () => {
-  function onClick() {
-    document.getElementById("sidebarMenu");
-  }
   return (
     <>
       <div>
-        <div class="navBar">
+        <div className="navBar">
           <div id="nav-container">
-            <div class="bg"></div>
-            <div class="button" tabindex="0">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <div className="bg"></div>
+            <div className="button" tabindex="0">
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
             </div>
             <div id="nav-content" tabindex="0">
               <ul>
@@ -32,7 +29,7 @@ const NavbarM1 = () => {
                 <li>
                   <a href="#0">Contact</a>
                 </li>
-                <li class="small">
+                <li className="small">
                   <a href="#0">Facebook</a>
                   <a href="#0">Instagram</a>
                 </li>

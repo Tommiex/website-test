@@ -3,10 +3,8 @@ import Slider from "./slider/slider";
 const SiteMain = () => {
   return (
     <div className="grid">
-      <div className="container">
-        <NavbarM1></NavbarM1>
-        
-      </div>
+      <NavbarM1></NavbarM1>
+      <Slider></Slider>
     </div>
   );
 };
