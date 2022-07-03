@@ -5,21 +5,29 @@
     width: 100%;
     min-width: 350px;
     z-index: -1;
-    overflow: hidden;
-    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+
+    background: black;
+}
+.main-carou-fixed{
+    height: 500px;
+    width: 100%;
+    position: fixed;
+
 }
 .main-carousel{
-    position: absolute;
-    top: 0;
-    height: 20%;
-    width: 100%;
-    background: #000000;
+    height: 100%;
+    width: inherit;
+    background: rgb(0, 58, 57);
 }
 
 .main-review{
     position: absolute;
     top: 20%;
     height: 100%;
-    width: 100%;
+    width: 95%;
+    margin: 20px;
+    border-radius: 50px;
     background: #b4ffe3;
 }

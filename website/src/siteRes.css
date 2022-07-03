@@ -21,7 +21,7 @@ body {
   .main{
     height: inherit;
     display: flex;
-    flex-direction: row;
+    
     overflow: hidden;
   }
   .cate-index{
