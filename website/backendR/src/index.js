@@ -10,3 +10,4 @@ const firebaseApp = initializeApp({
     measurementId: "G-2EV0DLQW0J"
     
 })
+console.log('run')

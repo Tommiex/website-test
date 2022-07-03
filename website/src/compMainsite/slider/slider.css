@@ -42,11 +42,10 @@
     scroll-snap-align: center;
   }
 }
-.slider{
+.slider {
   width: 500px;
-  
+  z-index: -1;
   position: absolute;
-    
 }
 * {
   box-sizing: border-box;
@@ -200,13 +199,14 @@ li {
 
 .carousel::after,
 .carousel__next {
+  z-index: 1;
   right: -1rem;
 }
 
 .carousel::before,
 .carousel::after {
   content: "";
-  z-index: 1;
+  z-index:1;
   background-color: #333;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;

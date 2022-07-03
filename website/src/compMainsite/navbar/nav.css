@@ -173,10 +173,10 @@ main small {
   padding: 0;
 }
 
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
 
 a,
 a:visited,
