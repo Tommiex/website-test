@@ -1,66 +1,122 @@
-// import "./slider2.css";
-// import $ from "jquery";
-
-// const RestMenu = () => {
-//   $(".carousel-client").bxSlider({
-//     auto: true,
-//     slideWidth: 234,
-//     minSlides: 2,
-//     maxSlides: 5,
-//     controls: false,
-//   });
-//   return (
-//     <div>
-//       <section className="client">
-//         <div className="container">
-//           <div className="row">
-//             <div className="section-title">
-//               <h2> Nos références clients : </h2>
-//             </div>
-//             <img src="" alt="" />
-
-//             <div className="carousel-client">
-//               <div className="slide">
-//                 <img
-//                   src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo1.png"
-//                   alt=""
-//                 />
-//               </div>
-//               <div className="slide">
-//                 <img
-//                   src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo2.png"
-//                   alt=""
-//                 />
-//               </div>
-//               <div className="slide">
-//                 <img
-//                   src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo3.png"
-//                   alt=""
-//                 />
-//               </div>
-//               <div className="slide">
-//                 <img
-//                   src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo1.png"
-//                   alt=""
-//                 />
-//               </div>
-//               <div className="slide">
-//                 <img
-//                   src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo2.png"
-//                   alt=""
-//                 />
-//               </div>
-//               <div className="slide">
-//                 <img
-//                   src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/slider-logo3.png"
-//                   alt=""
-//                 />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-// export default RestMenu;
+import "./slider2.css";
+const SliderEx = () => {
+  return (
+    <div className="slider2">
+      <div className="slide-track">
+        <div className="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+export default SliderEx;
