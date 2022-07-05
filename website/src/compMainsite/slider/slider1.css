@@ -45,7 +45,7 @@
 .slider {
   width: 80%;
   z-index: -1;
-  position: absolute;
+  
   max-height: 500px;
 }
 * {
@@ -102,7 +102,7 @@ li {
 .carousel__slide {
   position: relative;
   flex: 0 0 100%;
-  
+
   background-color: #f99;
   counter-increment: item;
 }
@@ -117,6 +117,7 @@ li {
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -40%, 70px);
+
   color: #fff;
   font-size: 2em;
 }
@@ -164,7 +165,6 @@ li {
 
 .carousel__navigation-list,
 .carousel__navigation-item {
-  
   display: inline-block;
 }
 
@@ -209,8 +209,8 @@ li {
 .carousel::before,
 .carousel::after {
   content: "";
-  z-index:1;
-  background-color: #333;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0);
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center center;

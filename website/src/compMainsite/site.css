@@ -1,17 +1,14 @@
-/* .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-} */
-.grid-slide {
-  display: flex;
-  justify-content: center;
-
-  /* grid-column-end: 2;
-  grid-column-start:1; */
-}
 #Navbar {
   position: fixed;
   top: 0;
   width: 100%;
   height: 60px;
+}
+.grid {
+  display: grid;
+  margin-top: 50px;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+}
+.box {
+  background-color: aqua;
 }
