@@ -4,9 +4,11 @@
 
 @media only screen and (max-width:600px) {
     .hamburger{
+        position: absolute;
+        right: 0;
         display: flex;
-        min-width: 60px;
-        min-height: 60px;
+        min-width: 50px;
+        min-height: 50px;
         justify-content: center ;
         align-items: center;
         flex-direction: column;
@@ -14,21 +16,20 @@
         cursor:pointer;
         transition: all 5s ease;
         pointer-events: auto;
-        
     }
     .hamburger div:nth-child(1){
-        width: 40px;
+        width: 30px;
         height: 3px;
         background: white;
     }
     .hamburger div:nth-child(2){
-        width: 40px;
+        width: 30px;
         height: 3px;
         background: white;
         
     }
     .hamburger div:nth-child(3){
-        width: 40px;
+        width: 30px;
         height: 3px;
         background: white;
     }
@@ -36,20 +37,20 @@
         transition: transform 0.3s ease;
     }
     .HBGactive div:nth-child(1){
-        width: 40px;
+        width: 30px;
         height: 3px;
         background: white;
         transform: translate3d(0, 10px, 0) rotate(45deg);
         
     }
     .HBGactive div:nth-child(2){
-        width: 40px;
+        width: 30px;
         height: 3px;
         background: white;
         opacity:0;
     }
     .HBGactive div:nth-child(3){
-        width: 40px;
+        width: 30px;
         height: 3px;
         background: white;
         transform: translate3d(0, -8px, 0) rotate(-45deg);

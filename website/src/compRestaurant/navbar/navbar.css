@@ -2,11 +2,12 @@
 
 .nav{
     position: fixed;
-    height: 60px;
+    height: 40px;
     width: 100%;
     background: black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 2;
 }
 .Right{
@@ -25,25 +26,32 @@
 .Left{
     color: white;
     font-size: larger;
-    margin: 30px;
     display: flex;
+    margin: 3%;
     align-items: center;
     justify-content: center;
 
 }
 @media only screen and (max-width:600px) {
+    .nav{
+        justify-content: unset;
+    }
     .Right{
-        display: none;
         opacity: 0;
+        position: relative;
+        right: -100px;
     }
     .Ractive{
         position: fixed;
-        opacity: 1;
         right: 0;
         top: 50px;
         display: flex;
         flex-direction: column;
-        text-align: start;
+        align-items: flex-end;
         transition: all 0.5s ease;
+        opacity: 1;
+    }
+    .Ractive>a{
+        text-align: right;
     }
 }

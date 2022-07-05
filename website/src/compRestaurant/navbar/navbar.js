@@ -28,12 +28,12 @@ function Navbar1R(){
             <div className="Left">
                 All
             </div>
-            <div className={changeBurgerClass()} onClick={()=>{activeBurger()}}>
+            <div className={changeBurgerClass()} onClick={()=>{activeBurger()}} >
                 <div className="bar1"></div>
                 <div className="bar2"></div>
                 <div className="bar3"></div>
             </div>
-            <div className={changeRightClass()}>
+            <div className={changeRightClass()} id="visi-change">
                 <a href="#">Promotion</a>
                 <a href="#">Contact</a>
                 <a href="#">Back to main</a>
