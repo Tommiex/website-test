@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import Login from "./auth/googlelogin";
 const Test = () => {
   const [text, setText] = useState("");
 
@@ -14,6 +15,7 @@ const Test = () => {
 
   return (
     <div>
+      <Login></Login>
       <button onClick={handleClick}>sadnesss</button>
       <div>{text}</div>
     </div>
