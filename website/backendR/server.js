@@ -1,8 +1,9 @@
 import express from "express";
 import { text } from "./config.js";
+
 const server = express();
 
-server.get((req, res, next) => {
+server.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
@@ -13,6 +14,7 @@ server.get((req, res, next) => {
 server.get("/", (req, res) => {
   res.send(text);
 });
-server.listen(8080, () => {
-    console.log("run server 8080");
-  });
+
+server.listen(9080, () => {
+  console.log("run server 9080");
+});
