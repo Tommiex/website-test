@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import LoginGoogle from "./auth/googlelogin";
+import Signup from "./auth/signup/signupForm";
 const Test = () => {
   const [text, setText] = useState("");
 
@@ -15,13 +16,14 @@ const Test = () => {
 
   return (
     <div>
+      
       <LoginGoogle></LoginGoogle>
       <button onClick={handleClick}>sadnesss</button>
       <div>{text}</div>
     </div>
   );
 };
-export default Test
+export default Test;
 
 // const Test = () => {
 //   const [text, setText] = useState("");
