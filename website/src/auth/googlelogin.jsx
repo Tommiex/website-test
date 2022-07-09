@@ -1,10 +1,10 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../firebase";
 
-function Login() {
-  const LoginWithGoogle = () => {
-    const provider = new GoogleAuthProvider();
-
+const LoginGoogle = () => {
+  const provider = new GoogleAuthProvider();
+  const auth = getAuth();
+  const Googlelogin = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         // This gives you a Google Access Token. You can use it to access the Google API.
@@ -12,7 +12,6 @@ function Login() {
         const token = credential.accessToken;
         // The signed-in user info.
         const user = result.user;
-
         console.log(user);
         // ...
       })
@@ -27,16 +26,12 @@ function Login() {
         // ...
       });
   };
-
   return (
     <div>
-      <div className="container">
-        <button className="btn-google" onClick={LoginWithGoogle}>
-          Login with google
-        </button>
+      <div>
+        <button onClick={Googlelogin}>login with google</button>
       </div>
     </div>
   );
-}
-
-export default Login;
+};
+export default LoginGoogle;
