@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import "firebase/analytics";
 
 import { GoogleAuthProvider } from "firebase/auth";
-
+import { getStorage } from "firebase/storage";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
@@ -25,3 +25,4 @@ const provider = new GoogleAuthProvider();
 provider.setCustomParameters({ prompt: "select_account" });
 
 export const signInWithGoogle = () => auth.signInWithPopup(provider);
+export const storage = getStorage(app);

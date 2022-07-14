@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import LoginGoogle from "./auth/googlelogin";
 import Signup from "./auth/signup/signupForm";
+import Upload from "./upload";
 const Test = () => {
   const [text, setText] = useState("");
 
@@ -16,9 +17,11 @@ const Test = () => {
 
   return (
     <div>
-      
       <LoginGoogle></LoginGoogle>
       <button onClick={handleClick}>sadnesss</button>
+      <div className="upload">
+        <Upload></Upload>
+      </div>
       <div>{text}</div>
     </div>
   );
