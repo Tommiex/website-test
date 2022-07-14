@@ -3,6 +3,7 @@ import { useState } from "react";
 import LoginGoogle from "./auth/googlelogin";
 import Signup from "./auth/signup/signupForm";
 import Upload from "./upload";
+import './test.css'
 const Test = () => {
   const [text, setText] = useState("");
 
