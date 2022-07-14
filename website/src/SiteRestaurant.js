@@ -2,7 +2,7 @@
 import "./siteRes.css";
 import Navbar1R from "./compRestaurant/navbar/navbar";
 import Category from "./compRestaurant/category/category";
-import Maincontain from "./compRestaurant/review/maincontain";
+import Carouseltest from "./compRestaurant/review/carouseltest";
 
 function SiteR() {
   return (
@@ -10,7 +10,7 @@ function SiteR() {
       <Navbar1R/>
       <div className="main">
         <Category />
-        <Maincontain />
+        <Carouseltest/>
       </div>
     </div>
   );
