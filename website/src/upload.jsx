@@ -12,17 +12,18 @@ import { v4 } from "uuid";
 const Upload = () => {
   const [imageUpload, setImageUpload] = useState(null);
   const [imageUrls, setImageUrls] = useState([]);
-  const [pathName, setPathname] = useState(null)
-  const uploadFile = async() => {
+  const [pathName, setPathname] = useState(null);
+  const uploadFile = async () => {
     if (imageUpload == null) return;
     const imageRef = ref(storage, `images/${imageUpload.name + v4()}`);
+
     // uploadBytes(imageRef, imageUpload).then((snapshot) => {
     //   getDownloadURL(snapshot.ref).then((url) => {
     //     setImageUrls((prev) => [...prev, url]);
     //   });
     // });
-    const snapshot = await uploadBytes(imageRef, imageUpload)
-    const url = await getDownloadURL(snapshot.ref)
+    const snapshot = await uploadBytes(imageRef, imageUpload);
+    const url = await getDownloadURL(snapshot.ref);
     setImageUrls((prev) => [...prev, url]);
   };
 
@@ -58,7 +59,7 @@ const Upload = () => {
       <button onClick={uploadFile}> Upload Image</button>
       {imageUrls.map((url, i) => {
         //return  รูปทั้งหมดมาใช้
-        return <img src={url} key={i} alt=''/>;
+        return <img src={url} key={i} alt="" />;
       })}
     </div>
   );

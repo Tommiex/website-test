@@ -3,6 +3,7 @@ import { useState } from "react";
 import LoginGoogle from "./auth/googlelogin";
 import Signup from "./auth/signup/signupForm";
 import Upload from "./upload";
+import TestUpload from "./testUpload";
 import './test.css'
 const Test = () => {
   const [text, setText] = useState("");
@@ -21,7 +22,7 @@ const Test = () => {
       <LoginGoogle></LoginGoogle>
       <button onClick={handleClick}>sadnesss</button>
       <div className="upload">
-        <Upload></Upload>
+        <TestUpload></TestUpload>
       </div>
       <div>{text}</div>
     </div>
