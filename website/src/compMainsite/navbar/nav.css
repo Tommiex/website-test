@@ -23,7 +23,7 @@ strong {
 .search-box {
   display: flex;
   justify-content: center;
-  align-items: center;
+align-items: center;    
   grid-column-start: 2;
   grid-column-end: 3;
 }

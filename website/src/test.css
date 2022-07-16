@@ -1,3 +1,13 @@
+.All-test{
+    position: relative;
+
+}
 .upload{
-    max-width: 500px;
+    max-width: 200px;
+}
+.Email-Test{
+    position: absolute;
+    top:2%;
+    left: 50%;
+    transform: translateX(-50%);
 }

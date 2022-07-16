@@ -1,0 +1,13 @@
+.login{
+    display: flex;
+    flex-direction: column;
+
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+.box-auth{
+    height: 30px;
+    width: 200px;
+}
