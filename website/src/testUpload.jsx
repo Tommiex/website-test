@@ -40,13 +40,14 @@ const TestUpload = () => {
       urls.push(url);
     }
     setImageUrls(urls);
+})
 
-    // response.items.forEach((item) => {
-    //   getDownloadURL(item).then((url) => {
-    //     setImageUrls((prev) => [...prev, url]);
-    //   });
-    // });
-  }, [pathName]);
+//     // response.items.forEach((item) => {
+//     //   getDownloadURL(item).then((url) => {
+//     //     setImageUrls((prev) => [...prev, url]);
+//     //   });
+//     // });
+//   }, [pathName]);
 
  
 
@@ -68,4 +69,4 @@ const TestUpload = () => {
   );
 };
 
-export default TestUpload;
+// export default TestUpload;

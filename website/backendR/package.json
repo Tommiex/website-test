@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "emulators": "^0.73.7",
     "firebase": "^9.8.4",
     "firebase-admin": "^11.0.0"
   }
