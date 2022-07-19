@@ -9,23 +9,26 @@ import {
 import { storage } from "./firebase";
 import { v4 } from "uuid";
 import { async } from "@firebase/util";
+import { valueCataContext } from "./radiobutton";
 
 const TestUpload = () => {
   const [imageUpload, setImageUpload] = useState(null);
   const [imageUrls, setImageUrls] = useState([]);
   const [pathName, setPathname] = useState(null);
   const imagesListRef = ref(storage, `${pathName}/`);
+  
+  
   const UploadFile = async () => {
     const cataogorie = useState(null);
-
     if (imageUpload == null) return;
     const imageRef = ref(storage, `${pathName}/${imageUpload.name + v4()}`);
-
     const snapshot = await uploadBytes(imageRef, imageUpload);
     const url = await getDownloadURL(snapshot.ref);
+    
+    
 
     setImageUrls((prev) => [...prev, url]);
-    setPathname((prev) => [...prev, cataogorie]);
+    setPathname(cataogorie);
   };
 
   const fetchData = useCallback(async () => {
@@ -45,26 +48,7 @@ const TestUpload = () => {
     // });
   }, [pathName]);
 
-  useEffect(() => {
-    fetchData();
-    const btn = document.querySelector("#btn");
-    const radioButtons = document.querySelectorAll('input[name="size"]');
-    const output = document.querySelector("#output");
-    btn.addEventListener("click", () => {
-      let selectedSize;
-      for (const radioButton of radioButtons) {
-        if (radioButton.checked) {
-          selectedSize = radioButton.value;
-          console.log(selectedSize);
-          break;
-        }
-      }
-      // show the output:
-      output.innerText = selectedSize
-        ? `You selected ${selectedSize}`
-        : `You haven't selected any size`;
-    });
-  }, [fetchData]);
+ 
 
   return (
     <div className="App">
@@ -79,22 +63,7 @@ const TestUpload = () => {
         //return  รูปทั้งหมดมาใช้
         return <img src={url} key={i} alt="" />;
       })}
-      <div className="radiobtn">
-        <div>
-          <input type="radio" name="size" value="XS" id="xs"></input>
-          <label htmlFor="xs">XS</label>
-        </div>
-        <div>
-          <input type="radio" name="size" value="S" id="s"></input>
-          <label htmlFor="s">S</label>
-        </div>
-        <div>
-          <input type="radio" name="size" value="M" id="m"></input>
-          <label htmlFor="m">M</label>
-        </div>
-        <button id="btn">Show Selected Value</button>
-        <p id="output"></p>
-      </div>
+      <p>sadasd</p>
     </div>
   );
 };
