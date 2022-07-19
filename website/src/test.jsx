@@ -4,7 +4,7 @@ import LoginGoogle from "./auth/googlelogin";
 import Upload from "./upload";
 import TestUpload from "./testUpload";
 import './test.css'
-import Signup from "./auth/EmailSignUp";
+import ReSignup from "./auth/EmailSignUp";
 const Test = () => {
   const [text, setText] = useState("");
 
@@ -26,7 +26,7 @@ const Test = () => {
       </div>
       <div>{text}</div>
       <div className="Email-Test">
-        <Signup/>
+        <ReSignup/>
       </div>
     </div>
   );

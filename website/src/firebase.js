@@ -1,7 +1,8 @@
 import { initializeApp } from "firebase/app";
-
 import "firebase/analytics";
-
+import {
+  connectAuthEmulator
+} from "firebase/auth"
 import { GoogleAuthProvider } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getAuth } from "firebase/auth";
@@ -18,6 +19,7 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+// connectAuthEmulator(auth, "http://localhost:3000");   
 
 // Initialize Firebase
 
