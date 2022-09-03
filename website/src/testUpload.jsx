@@ -10,25 +10,27 @@ import { storage } from "./firebase";
 import { v4 } from "uuid";
 import { async } from "@firebase/util";
 import { valueCataContext } from "./radiobutton";
+import { useContext } from "react";
+import Radiobtn from "./radiobutton";
 
 const TestUpload = () => {
+
+  const catagorie = useContext(valueCataContext);
   const [imageUpload, setImageUpload] = useState(null);
   const [imageUrls, setImageUrls] = useState([]);
   const [pathName, setPathname] = useState(null);
   const imagesListRef = ref(storage, `${pathName}/`);
   
-  
   const UploadFile = async () => {
-    const cataogorie = useState(null);
+    
     if (imageUpload == null) return;
     const imageRef = ref(storage, `${pathName}/${imageUpload.name + v4()}`);
     const snapshot = await uploadBytes(imageRef, imageUpload);
     const url = await getDownloadURL(snapshot.ref);
+    console.log(catagorie)
+    setPathname(catagorie);
     
-    
-
     setImageUrls((prev) => [...prev, url]);
-    setPathname(cataogorie);
   };
 
   const fetchData = useCallback(async () => {
@@ -40,19 +42,11 @@ const TestUpload = () => {
       urls.push(url);
     }
     setImageUrls(urls);
-})
-
-//     // response.items.forEach((item) => {
-//     //   getDownloadURL(item).then((url) => {
-//     //     setImageUrls((prev) => [...prev, url]);
-//     //   });
-//     // });
-//   }, [pathName]);
-
- 
+  });
 
   return (
     <div className="App">
+      <Radiobtn></Radiobtn>
       <input
         type="file"
         onChange={(event) => {
@@ -64,9 +58,8 @@ const TestUpload = () => {
         //return  รูปทั้งหมดมาใช้
         return <img src={url} key={i} alt="" />;
       })}
-      <p>sadasd</p>
     </div>
   );
 };
 
-// export default TestUpload;
+export default TestUpload;
