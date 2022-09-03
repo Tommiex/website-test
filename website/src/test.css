@@ -1,8 +1,15 @@
 .All-test{
     position: relative;
-
+    left: 0;
 }
-.upload{
+
+.upload>img{
+    max-width: 200px;
+}
+.App{
+    max-width: 200px;
+}
+.App>img{
     max-width: 200px;
 }
 .Email-Test{

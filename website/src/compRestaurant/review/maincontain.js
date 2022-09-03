@@ -31,9 +31,8 @@ const Slider = ({slides}) => {
                                     {index===current && (
                                         <div className={"slide center"} id={"active"}>
                                             <img src={slide.image} alt='travel' className={'image center'}/>
-                                        </div>
-                                        
-                                    )}
+                                        </div>                                        
+                                    )}                                    
                                     {index===(current-1) && (
                                         <div className={"slide slide-left" + " left"} id={'image'}>
                                             <img src={slide.image} alt='travel' className={'image-left'}/>
